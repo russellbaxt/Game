@@ -7,16 +7,16 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-public class Character
+public class pe
 {
 	private int x = 0;
 	private int y = 0;
 	private String path;
 	private Image image;
-	private int speed;
+	private int speed = 0;
 	private int angle = 0;
 
-	public Character(int x, int y, String path)
+	public pe(int x, int y, String path)
 	{
 		this.x = x;
 		this.y = y;

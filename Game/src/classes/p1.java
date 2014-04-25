@@ -2,15 +2,16 @@ package classes;
 
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
+import java.awt.event.MouseEvent;
 
-public class Player extends Character
+public class p1 extends pe
 {
 	private boolean keyUp = false;
 	private boolean keyDown = false;
 	private boolean keyLeft = false;
 	private boolean keyRight = false;
 
-	public Player(int x, int y, String path)
+	public p1(int x, int y, String path)
 	{
 		super(x, y, path);
 	}
@@ -120,6 +121,11 @@ public class Player extends Character
 		}
 		
 		super.move();
+	}
+	
+	public void shoot(MouseEvent e)
+	{
+		
 	}
 
 	public boolean isKeyUp()

@@ -1,24 +1,26 @@
 package setup;
 
-import graphics.Draw;
+import graphics.draw;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 import javax.swing.JFrame;
 import javax.swing.Timer;
 
-public class Main implements ActionListener, KeyListener
+public class main implements ActionListener, KeyListener, MouseListener
 {
-	Draw draw;
+	draw draw;
 	JFrame frame;
 	Timer timer;
 
 	public static void main(String[] args)
 	{
-		new Main().setup();
+		new main().setup();
 	}
 
 	public void setup()
@@ -28,9 +30,8 @@ public class Main implements ActionListener, KeyListener
 		frame.setLocationRelativeTo(null);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-		draw = new Draw();
+		draw = new draw();
 		frame.add(draw);
-		frame.addKeyListener(draw);
 
 		timer = new Timer(16, this);
 
@@ -64,6 +65,36 @@ public class Main implements ActionListener, KeyListener
 	public void keyTyped(KeyEvent e)
 	{
 
+	}
+
+	@Override
+	public void mouseClicked(MouseEvent e)
+	{
+		
+	}
+
+	@Override
+	public void mouseEntered(MouseEvent e)
+	{
+		
+	}
+
+	@Override
+	public void mouseExited(MouseEvent e)
+	{
+		
+	}
+
+	@Override
+	public void mousePressed(MouseEvent e)
+	{
+		
+	}
+
+	@Override
+	public void mouseReleased(MouseEvent e)
+	{
+		
 	}
 
 }
